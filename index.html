@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Solar</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Solar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sun">
-            <img src="./images/sun.png" alt="sun">
-        </div>
-        <div class="mercury" onclick="openModal('Mercury', 'Mercury is the smallest planet in our solar system and closest to the Sun.')"></div>
-        <div class="venus" onclick="openModal('Venus', 'Venus has a thick atmosphere filled with carbon dioxide, and it traps heat making it the hottest planet.')"></div>
-        <div class="earth" onclick="openModal('Earth', 'Earth is the only planet known to support life. It has one moon.')">
-            <div class="moon"></div>
-        </div>
-        <div class="mars" onclick="openModal('Mars', 'Mars is known as the Red Planet due to its reddish appearance, and it has two moons.')"></div>
-        <div class="jupiter" onclick="openModal('Jupiter', 'Jupiter is the largest planet in our solar system with a Great Red Spot.')"></div>
-        <div class="saturn" onclick="openModal('Saturn', 'Saturn is known for its beautiful rings made of ice and rock.')"></div>
-        <div class="uranus" onclick="openModal('Uranus', 'Uranus rotates on its side and is the coldest planet in the solar system.')"></div>
-        <div class="neptune" onclick="openModal('Neptune', 'Neptune is the farthest planet from the Sun and has strong winds.')"></div>
-        <div class="pluto" onclick="openModal('Pluto', 'Pluto is a dwarf planet located in the Kuiper Belt.')"></div>
-    </div>
-    
-    <div id="infoPanel" class="info-panel">
-        <h2 id="planetName">Clique em um planeta</h2>
-        <p id="planetInfo">As informações aparecerão aqui.</p>
-    </div>
+    <header class="nav">
+        <nav class="menu">
+            <div>
+                <h1>Aumente seus conhecimento</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#planets-count">Quantos planetas existem no Sistema Solar?</a></li>
+                    <li>
+                        <h2>Planetas do Sistema Solar</h2>
+                        <ul class="submenu">
+                            <li><a href="#mercury">Mercúrio</a></li>
+                            <li><a href="#venus">Vênus</a></li>
+                            <li><a href="#earth">Terra</a></li>
+                            <li><a href="#mars">Marte</a></li>
+                            <li><a href="#jupiter">Júpiter</a></li>
+                            <li><a href="#saturn">Saturno</a></li>
+                            <li><a href="#uranus">Urano</a></li>
+                            <li><a href="#neptune">Netuno</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#mind-map">Mapa mental: Sistema Solar</a></li>
+                    <li><a href="#curiosities">Curiosidades sobre o Sistema Solar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <button onclick="zoomIn()">Zoom In</button>
-    <button onclick="zoomOut()">Zoom Out</button>
+    <main>
+        <div class="container">
+            <div class="sun">
+              <img src="./images/sun.png" alt="Sun">
+              <div class="info">
+                <h2>Sol</h2>
+                <p>Estrela central do Sistema Solar, fonte de luz e calor.</p>
+              </div>
+            </div>
+            <div class="mercury" data-info="planeta-info mercury.txt"></div>
+            <div class="venus" data-info="planeta-info venus.txt"></div>
+            <div class="earth">
+              <div class="moon"></div>
+              <div class="info">
+                <h2>Terra</h2>
+                <p>Planeta onde vivemos, com atmosfera e água líquida.</p>
+              </div>
+            </div>
+            <div class="mars" data-info="planeta-info mars.txt"></div>
+            <div class="jupiter" data-info="planeta-info jupiter.txt"></div>
+            <div class="saturn" data-info="planeta-info saturn.txt"></div>
+            <div class="uranus" data-info="planeta-info uranus.txt"></div>
+            <div class="neptune" data-info="planeta-info neptune.txt"></div>
+            <div class="pluto" data-info="planeta-info pluto.txt"></div>
+          </div>
+    </main>
 
-    <script src="script.js"></script>
+  <footer>
+        <p>CURSO DE GRADUAÇÃO LICENCIATURA EM CIÊNCIAS BIOLÓGICAS<br>
+        UAB IFNMG / ARAÇUAÍ</p>
+        <p>ATIVIDADE PRÁTICA E SEMINÁRIO</p>
+        <p>DISCIPLINA: BIOFÍSICA<br>
+        PROFESSOR: DRA. GLÁUCIA SOARES TOLENTINO<br>
+        ALUNOS: MAGNO PEREIRA SILVA<br>
+        PAULA VASCONCELLOS SILVA.</p>
+        <p>ARAÇUAÍ<br>
+        2025</p>
+    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
-
