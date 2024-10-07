@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sun">
+            <img src="./images/sun.png" alt="sun">
+        </div>
+        <div class="mercury" onclick="openModal('Mercury', 'Mercury is the smallest planet in our solar system and closest to the Sun.')"></div>
+        <div class="venus" onclick="openModal('Venus', 'Venus has a thick atmosphere filled with carbon dioxide, and it traps heat making it the hottest planet.')"></div>
+        <div class="earth" onclick="openModal('Earth', 'Earth is the only planet known to support life. It has one moon.')">
+            <div class="moon"></div>
+        </div>
+        <div class="mars" onclick="openModal('Mars', 'Mars is known as the Red Planet due to its reddish appearance, and it has two moons.')"></div>
+        <div class="jupiter" onclick="openModal('Jupiter', 'Jupiter is the largest planet in our solar system with a Great Red Spot.')"></div>
+        <div class="saturn" onclick="openModal('Saturn', 'Saturn is known for its beautiful rings made of ice and rock.')"></div>
+        <div class="uranus" onclick="openModal('Uranus', 'Uranus rotates on its side and is the coldest planet in the solar system.')"></div>
+        <div class="neptune" onclick="openModal('Neptune', 'Neptune is the farthest planet from the Sun and has strong winds.')"></div>
+        <div class="pluto" onclick="openModal('Pluto', 'Pluto is a dwarf planet located in the Kuiper Belt.')"></div>
+    </div>
+    
+    <div id="infoPanel" class="info-panel">
+        <h2 id="planetName">Clique em um planeta</h2>
+        <p id="planetInfo">As informações aparecerão aqui.</p>
+    </div>
+
+    <button onclick="zoomIn()">Zoom In</button>
+    <button onclick="zoomOut()">Zoom Out</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
