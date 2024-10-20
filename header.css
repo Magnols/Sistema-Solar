@@ -1,10 +1,15 @@
 /* Estilo do header */
 header {
-    background-color: #282c34; /* Adicione uma cor de fundo ao cabeçalho */
+    background-color: #000000; /* Adicione uma cor de fundo ao cabeçalho */
     position: fixed; /* Fixa o cabeçalho no topo */
     width: 100%; /* Faz com que o cabeçalho ocupe toda a largura */
     top: 0; /* Alinha o cabeçalho ao topo */
     z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+    text-align: center;
+}
+
+header nav ul {
+    display: inline-block; /* Itens do menu em linha */
 }
 
 header nav ul {
@@ -40,26 +45,4 @@ h1 {
 h2 {
     color: #3bd42d; /* Cor do h2 */
     text-decoration: underline; /* Sublinhado no h2 */
-}
-
-/* Estilo para submenu */
-.submenu {
-    display: block; /* Itens da subclasse exibidos em bloco */
-    padding: 0; /* Remove padding padrão */
-}
-
-.submenu li {
-    display: block; /* Cada item do submenu em linha separada */
-    margin: 5px 0; /* Espaço entre os itens do submenu */
-}
-
-@media screen and (min-width: 992px) {
-    header {
-        position: relative; /* Muda a posição para relativa em telas grandes */
-    }
-    .menu {
-        position: absolute; /* Coloca o menu em uma posição absoluta */
-        right: 2%; /* Alinha o menu à direita */
-        top: 18%; /* Alinha o menu para baixo */
-    }
 }

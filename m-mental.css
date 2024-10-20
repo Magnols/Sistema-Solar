@@ -1,0 +1,14 @@
+/* style.css */
+
+/* Estilizando a imagem */
+img {
+    max-width: auto; /* Ajusta a largura da imagem ao tamanho máximo do container */
+    height: 100%; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    margin: 90px auto; /* Centraliza a imagem horizontalmente */
+  }
+  
+  /* Estilizando o main (opcional) */
+  main {
+    padding: 20px; /* Adiciona um espaço em volta da imagem */
+  }

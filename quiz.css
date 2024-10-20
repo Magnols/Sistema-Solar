@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/fundo.webp'); /* Imagem padrão */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 128, 0.8); /* Azul marinho */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.score {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#progress {
+    background-color: #3bd42d;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.question-box {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3bd42d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.9;
+}

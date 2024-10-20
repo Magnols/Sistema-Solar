@@ -1,16 +1,31 @@
 footer {
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
     text-align: center;
-    border-top: 1px solid #f0f5ff;
-    padding: 20px;
-    width: 75%;
-    margin: auto;
-    text-transform: lowercase;
+    border-top: 1px solid #3bd42d;
+    padding: 5px;
+    width: 100%;
+    margin: 0; /* Remove unnecessary margin */
 }
 
-footer section span:first-child {
-    color: #5e49ff;
+footer p {
+    color: #ffffff;
+    font-size: 10px; /* Tamanho padrão para todos os p */
 }
 
-footer section span:last-child {
+footer p.ifnm {
+    font-size: 12px;
+    font-style: italic; /* Itálico para a classe ifnm */
+}
+
+footer span {
     color: #3bd42d;
+    font-size: 11px;
 }
+
+.dnc {
+    display: flex; /* Transforma a section em um container flex */
+    justify-content: center; /* Distribui as divs com espaço entre elas */
+    gap: 15%;
+  }
